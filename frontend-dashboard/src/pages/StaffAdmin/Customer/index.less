@@ -1,0 +1,99 @@
+@import '../../../theme.less';
+
+.staffTag {
+  margin: 6px 3px;
+  padding: 2px 8px;
+  color: @text-color-secondary;
+  vertical-align: center;
+
+  .icon {
+    width: 36px !important;
+    height: 36px !important;
+    margin-right: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+
+    .svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .text_corp {
+    font-size: 14px;
+    vertical-align: -1px;
+    color: orange;
+  }
+
+  .text {
+    color: @text-color-secondary;
+    font-size: 14px;
+    vertical-align: -1px;
+  }
+
+}
+
+// select组件，员工选项
+.staffOption {
+  position: relative;
+  color: #333;
+  font-size: 14px;
+
+  .avatar {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+
+  .text {
+    margin-left: 6px;
+  }
+}
+
+.tagContainer {
+  max-width: 700px;
+  :global {
+    .tag-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 32px;
+      text-align: center;
+      color: @text-color-secondary;
+      padding: 4px 8px;
+      font-size: 13px;
+      margin-right: 4px;
+      text-align: center;
+      background-color: rgb(241, 250, 255);
+      border: 1px solid rgb(241, 250, 255);
+    }
+  }
+}
+
+.survey{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .cusSurveyLeft{
+    width:80%;
+  }
+  .cusSurveyRight{
+    width: 14%;
+    margin-right: 50px;
+    .eventsTitle{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .titleText{
+        color:rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+}
+

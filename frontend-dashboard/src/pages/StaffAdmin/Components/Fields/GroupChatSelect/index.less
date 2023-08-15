@@ -1,0 +1,39 @@
+@import '../../../../../theme.less';
+
+.selectedItem {
+  display: -webkit-box;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  -webkit-box-align: center;
+
+  .avatar {
+    margin-right: 4px;
+    color: rgba(0,0,0,0.65);
+  }
+
+  .groupName {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: rgba(66, 66, 66, 0.85);
+  }
+
+  .owner {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: rgba(66, 66, 66, 0.45);
+  }
+
+  span {
+    color: rgba(0,0,0,0.65);
+  }
+}

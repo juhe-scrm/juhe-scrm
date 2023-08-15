@@ -1,0 +1,301 @@
+.card {
+  width: 268px;
+  min-height: 155px;
+  margin-top: 16px;
+  margin-right: 11px;
+  padding: 4px 4px 0;
+  background: #ededed6b;
+  border-radius: 4px;
+  .linkInfoContainer {
+    width: 100%;
+    height: 117px;
+    padding-top: 16px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .info {
+      width: 100%;
+      height: 100px;
+      padding: 0 16px 12px;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 14px;
+      line-height: 20px;
+      -webkit-box-align: end;
+      .title {
+        display: -webkit-box;
+        width: 100%;
+        max-height: 40px;
+        overflow: hidden;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .infoInnerFlexBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        a {
+          display: -webkit-box;
+          box-sizing: border-box;
+          max-width: 166px;
+          max-height: 36px;
+          margin-top: 9px;
+          overflow: hidden;
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 13px;
+          line-height: 18px;
+          text-overflow: ellipsis;
+          background-color: transparent;
+          cursor: pointer;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          &:hover {
+            text-decoration: none;
+            outline: 0;
+          }
+        }
+        img {
+          width: 48px;
+          height: 48px;
+          -o-object-fit: cover;
+          object-fit: cover;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 14px;
+          line-height: 20px;
+          background: #ededed;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+  .tagBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 40px;
+    padding: 11px 8px 0;
+    background: #fff;
+    margin-top: 1px;
+    border-radius: 4px;
+    :global {
+      .ant-tag {
+        display: inline-block;
+        width: auto;
+        height: 30px;
+        margin-right: 8px;
+        margin-bottom: 11px;
+        padding: 5px 10px;
+        color: #6b7a88;
+        line-height: 20px;
+        background: #f1faff;
+        border: 1px solid #f1faff;
+        border-radius: 2px;
+      }
+    }
+  }
+  .operateFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 10px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 13px;
+    line-height: 18px;
+    .titleFooter {
+      display: -webkit-box;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 13px;
+      line-height: 18px;
+      width: 95%;
+    }
+    div {
+      display: flex;
+      justify-content: flex-end;
+      span {
+        display: -webkit-box;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          color: steelblue;
+        }
+      }
+    }
+  }
+}
+
+.posterOrVideoCard {
+  width: 246px;
+  height: auto;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 4px 4px 0;
+  background: #ededed6b;
+  border-radius: 4px;
+  .imgContainer {
+    width: 100%;
+    height: auto;
+    background: #fff;
+  }
+  .videoContainer{
+    width: 100%;
+    background: #fff;
+  }
+  .tagBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 45.333px;
+    padding: 8px 6px ;
+    color: rgba(0,0,0,0.45);
+    line-height: 28px;
+    background: #fff;
+    margin-top: 1px;
+    :global {
+      .ant-tag {
+        display: inline-block;
+        width: auto;
+        height: 25px;
+        margin-right: 8px;
+        padding: 5px 10px;
+        color: #6b7a88;
+        line-height: 13.666px;
+        background: #f1faff;
+        border: 1px solid #f1faff;
+        border-radius: 2px;
+      }
+    }
+  }
+  .operateFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 46px;
+    padding: 8px 4px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    line-height: 30px;
+    .titleFooter {
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 13px;
+      line-height: 30px;
+      width: 160px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    div {
+      display: flex;
+      justify-content: flex-end;
+      span {
+        display: -webkit-box;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          color: steelblue;
+        }
+      }
+    }
+  }
+}
+
+.fileCard {
+  width: 268px;
+  min-height: 130px;
+  margin-top: 16px;
+  margin-right: 11px;
+  padding: 4px 4px 0;
+  background: #ededed6b;
+  border-radius: 4px;
+  .fileInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-box-align: start;
+    img {
+      width: 48px;
+      height: 48px;
+      margin-top: 22px;
+    }
+    .fileInfo {
+      width:160px;
+      p:first-child {
+        display: -webkit-box;
+        max-height: 40px;
+        margin-top: 20px;
+        overflow: hidden;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  .tagBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 40px;
+    padding: 11px 8px 0;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 1px;
+    border-radius: 4px;
+    :global {
+      .ant-tag {
+        display: inline-block;
+        width: auto;
+        height: 30px;
+        margin-right: 8px;
+        margin-bottom: 11px;
+        padding: 5px 10px;
+        color: #6b7a88;
+        line-height: 20px;
+        background: #f1faff;
+        border: 1px solid #f1faff;
+        border-radius: 2px;
+      }
+    }
+  }
+  .operateFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 10px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 13px;
+    line-height: 18px;
+    span {
+      display: -webkit-box;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 13px;
+      line-height: 18px;
+    }
+    div {
+      display: flex;
+      justify-content: flex-end;
+      span {
+        display: -webkit-box;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          color: steelblue;
+        }
+      }
+    }
+  }
+}

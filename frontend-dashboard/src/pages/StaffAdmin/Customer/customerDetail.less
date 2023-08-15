@@ -1,0 +1,110 @@
+@import '../../../theme.less';
+@import '../../../styles/component';
+.userPostWrap {
+  .group-post-data-warp {
+    .date-title {
+      color: rgba(0, 0, 0, .85);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .post-data-list-wrap {
+      margin-top: 12px;
+
+      .post-data {
+        .time-title {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          color: #aeb4bf;
+          font-size: 13px;
+
+          .icon-wrap {
+            font-size: 15px;
+            margin-right: 12px;
+          }
+        }
+
+        .event-content-wrap {
+          margin-left: 7px;
+          border-left: 1px dashed #b4b9c3;
+          padding-left: 20px;
+          padding-bottom: 14px;
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+
+          .event-content {
+            padding: 16px 20px;
+            border: 1px solid #d0e8ff;
+            border-radius: 2px;
+            background: #f6fbfe;
+            max-width: 70%;
+            margin-right: 14px;
+
+            .title {
+              font-size: 14px;
+              color: rgba(0, 0, 0, .9);
+              font-weight: 700;
+              margin-bottom: 8px;
+            }
+
+            .info {
+              color: #3b4c66;
+              word-break: break-all;
+              font-size: 13px;
+              white-space: pre-line;
+
+              .name {
+                font-weight: 700;
+                margin-right: 8px;
+              }
+
+              .avatar {
+                vertical-align: bottom;
+                width: 20px;
+                height: 20px;
+                margin: 0 8px;
+                border-radius: 2px;
+              }
+            }
+          }
+
+          .action-icon {
+            width: 21px;
+            height: 21px;
+            background: #f0f0f0;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .follow-up-event-fold-wrap {
+    .event-expaned {
+      color: #1890ff;
+    }
+  }
+}
+
+.baseInfoContainer{
+  :global{
+    .ant-descriptions-bordered .ant-descriptions-item-label{
+      padding: 0 !important;
+    }
+
+  }
+}
+
+

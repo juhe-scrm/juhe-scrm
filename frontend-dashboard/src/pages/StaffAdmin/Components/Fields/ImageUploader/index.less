@@ -1,0 +1,30 @@
+@import '../../../../../theme.less';
+
+.imageUploader {
+  :global {
+    .ant-upload-select-picture-card {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .image {
+    max-width: 260px;
+  }
+
+  .button {
+    padding: 40px;
+    color: rgba(66, 66, 66, 0.65);
+
+    .text {
+      font-size: 13px;
+    }
+  }
+
+  .button:hover {
+    color: @primary-color !important;
+    background-color: rgba(@primary-color, 0.05);
+  }
+}
+
+

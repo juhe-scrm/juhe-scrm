@@ -1,0 +1,60 @@
+# 后端
+*.exe
+
+.idea
+backend-api/conf/config.yaml
+backend-api/conf/config.test.yaml
+backend-api/conf/config.demo.yaml
+backend-api/conf/config.dev.yaml
+backend-api/conf/config.prod.yaml
+
+backend-api/conf/*.key
+backend-api/docs/swagger.json
+backend-api/docs/swagger.yaml
+
+backend-api/scripts/deploy-test.bat
+backend-api/scripts/deploy-*.bat
+backend-api/go.sum
+backend-api/main
+
+# 前端
+# dependencies
+frontend-*/**/node_modules
+# roadhog-api-doc ignore
+frontend-*//src/utils/request-temp.js
+frontend-*/_roadhog-api-doc
+
+# production
+frontend-*//dist
+frontend-*//.vscode
+
+# misc
+frontend-*/.DS_Store
+frontend-*/npm-debug.log*
+frontend-*/yarn-error.log
+
+frontend-*//coverage
+frontend-*/.idea
+frontend-*/yarn.lock
+frontend-*/package-lock.json
+frontend-*/*bak
+frontend-*/.vscode
+
+# visual studio code
+frontend-*/.history
+*.log
+frontend-*/functions/*
+frontend-*/.temp/**
+
+# umi
+frontend-*/.umi
+frontend-*/.umi-production
+
+# screenshot
+frontend-*/screenshot
+frontend-*/.firebase
+frontend-*/.eslintcache
+
+frontend-*/build
+
+frontend-*/scripts/deploy*

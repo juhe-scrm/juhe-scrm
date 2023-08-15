@@ -1,0 +1,60 @@
+@import '../../../../../theme.less';
+@import '../../../../../styles/component';
+
+.tagList {
+  margin: 15px 0 30px 0;
+  @media (max-width: @screen-xs) {
+    margin-top: 6px;
+  }
+
+  :global {
+    .tag-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 32px;
+      //margin: 1px;
+      text-align: center;
+      //color: #6b7a88;
+      color: @text-color-secondary;
+      padding: 4px 8px;
+      font-size: 14px;
+      text-align: center;
+      //margin-bottom: 8px;
+      background-color: rgb(241, 250, 255);
+      border: 1px solid rgb(241, 250, 255);
+    }
+
+    .selected-tag-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 32px;
+      margin: 1px;
+      color: @primary-color;
+      font-size: 14px;
+      text-align: center;
+      background-color: rgb(231, 247, 255);
+    }
+  }
+}
+
+.groupAction {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+
+  @media (max-width: @screen-xs) {
+    margin-top: 12px;
+  }
+
+  > button {
+    padding: 2px 6px;
+  }
+}
+
+.tagGroupItem:last-child {
+  border-bottom: none;
+}

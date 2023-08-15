@@ -1,0 +1,274 @@
+@import '../../../../../theme.less';
+@import '../../../../../styles/component';
+
+.addStaffDialogContent {
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+
+  .container {
+    display: -webkit-box;
+    display: flex;
+    height: 375px;
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    .left {
+      display: -webkit-box;
+      display: flex;
+      flex-direction: column;
+      width: 293px;
+      border-right: 1px solid #e8e8e8;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+
+      > p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 23px;
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 14px;
+        line-height: 22px;
+
+        > button {
+          padding: 0;
+        }
+      }
+
+      .toolTop {
+        padding-right: 32px;
+
+        .ant-checkbox-inner {
+          width: 14px;
+          height: 14px;
+        }
+
+        .ant-checkbox + span {
+          padding: 0 4px;
+        }
+
+        .search-icon {
+          color: rgba(0, 0, 0, 0.25);
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+
+      .searchInput {
+        width: 263px;
+        margin-bottom: 16px;
+        background: #fff;
+        border-radius: 4px;
+      }
+
+      .staffTree {
+        :global {
+          .ant-tree-list-holder-inner{
+            margin-left: -3px;
+           padding-left: 0;
+          }
+          .ant-tree-treenode {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 14px;
+
+            .ant-tree-checkbox {
+              margin: 0 8px 0 0;
+            }
+
+            .ant-tree-title {
+              .anticon {
+                font-size: 21px !important;
+                vertical-align: -5px !important;
+              }
+            }
+          }
+        }
+
+        .staffTitleNode {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 4px 4px;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 14px;
+
+          .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: @border-radius-base;
+          }
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12px;
+
+            .title {
+              padding: 6px 0;
+              line-height: 1;
+            }
+
+            em {
+              padding: 2px 3px;
+              color: @text-color-secondary;
+              font-size: 12px;
+              font-style: normal;
+              line-height: 1;
+              border: @text-color-secondary solid 1px;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      display: -webkit-box;
+      display: flex;
+      flex-direction: column;
+      width: 275px;
+      margin-top: 48px;
+      padding-left: 31px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+
+      > p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 23px;
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 14px;
+        line-height: 22px;
+
+        > button {
+          padding: 0;
+        }
+      }
+
+      .selectedStaffsList {
+        height: 348px;
+        overflow-y: auto;
+
+        > li {
+          width: 210px;
+          cursor: default;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          i {
+            color: #979797;
+
+            &:hover {
+              cursor: pointer;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: auto;
+      margin-bottom: 24px;
+      overflow: hidden;
+
+      .right {
+        padding-left: 0;
+      }
+    }
+
+    .allStaffList {
+      height: 200px;
+    }
+  }
+}
+
+.allStaffList {
+  height: 275px;
+  margin-bottom: 0;
+  padding-right: 20px;
+  padding-left: 0;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #c8c8c8;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: #bebebe;
+    }
+
+    &:active {
+      background: #b0b0b0;
+    }
+  }
+
+  > li {
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    margin-top: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+
+    .disabledCheckbox {
+      .ant-checkbox-inner {
+        background-color: #f5f5f5;
+        border-color: #d9d9d9 !important;
+      }
+    }
+
+    .roleTypeBox {
+      display: inline;
+      padding: 0 4px;
+      color: #8b9fbb;
+      font-size: 12px;
+      font-style: normal;
+      border: 1px solid #8b9fbb;
+      border-radius: 2px;
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+
+    &:hover {
+      .ant-checkbox-inner {
+        border-color: #1890ff;
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .ant-checkbox-inner {
+      border-radius: 50%;
+    }
+  }
+}

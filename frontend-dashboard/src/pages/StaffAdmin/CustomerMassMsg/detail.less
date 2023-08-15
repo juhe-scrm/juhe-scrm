@@ -1,0 +1,98 @@
+@import '../../../theme.less';
+
+.detailContainer {
+  .previewContainer {
+    .title {
+      width: 274px;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  :global {
+    .ant-descriptions-item {
+      padding-bottom: 26px !important;
+    }
+
+    .ant-descriptions-item-label {
+      color: rgba(66, 66, 66, 0.8);
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-view {
+      border: 1px solid #f0f0f0;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-view > table {
+      table-layout: auto;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label,
+    .ant-descriptions-bordered .ant-descriptions-item-content {
+      padding: 16px 24px;
+      border-right: 1px solid #f0f0f0;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label:last-child,
+    .ant-descriptions-bordered .ant-descriptions-item-content:last-child {
+      border-right: none;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label {
+      background-color: #fafafa;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label::after {
+      display: none;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-row {
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-row:last-child {
+      border-bottom: none;
+    }
+
+    .ant-descriptions-bordered.ant-descriptions-middle .ant-descriptions-item-label,
+    .ant-descriptions-bordered.ant-descriptions-middle .ant-descriptions-item-content {
+      padding: 12px 24px;
+    }
+
+    .ant-descriptions-bordered.ant-descriptions-small .ant-descriptions-item-label,
+    .ant-descriptions-bordered.ant-descriptions-small .ant-descriptions-item-content {
+      padding: 8px 16px;
+    }
+
+    .ant-descriptions-rtl {
+      direction: rtl;
+    }
+
+    .ant-descriptions-rtl .ant-descriptions-item-label::after {
+      margin: 0 2px 0 8px;
+    }
+
+    .ant-descriptions-rtl.ant-descriptions-bordered .ant-descriptions-item-label,
+    .ant-descriptions-rtl.ant-descriptions-bordered .ant-descriptions-item-content {
+      border-right: none;
+      border-left: 1px solid #f0f0f0;
+    }
+
+    .ant-descriptions-rtl.ant-descriptions-bordered .ant-descriptions-item-label:last-child,
+    .ant-descriptions-rtl.ant-descriptions-bordered .ant-descriptions-item-content:last-child {
+      border-left: none;
+    }
+
+    .ant-descriptions-row > th,
+    .ant-descriptions-row > td {
+      padding-bottom: 16px;
+    }
+
+    .ant-descriptions-row:last-child {
+      border-bottom: none;
+    }
+
+
+  }
+}
+
+

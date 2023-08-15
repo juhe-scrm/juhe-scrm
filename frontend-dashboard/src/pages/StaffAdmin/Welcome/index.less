@@ -1,0 +1,179 @@
+@import '../../../theme.less';
+
+.welcomeContainer {
+  :global {
+    .ant-statistic-title{
+      font-weight: 600;
+    }
+    .ant-statistic-content-value-int {
+      font-weight: 600;
+    }
+  }
+
+  .detailButton {
+    font-size: 13px;
+    color: #6b7a88;
+  }
+
+  .staffInfoBox {
+    margin-top: -6px;
+    vertical-align: center;
+    color: @text-color-secondary;
+    font-size: 14px;
+    display: flex;
+    align-items: start;
+    margin-bottom: 12px;
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 4px;
+      margin-right: 12px;
+    }
+
+    .textGroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 48px;
+
+      > p {
+        margin-bottom: 0;
+      }
+
+      .nickname {
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      .role {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+
+.trendChartContainer {
+  :global {
+    .ant-form-item {
+      margin-bottom: 18px;
+    }
+  }
+
+  .chartBox {
+    margin-top: 24px;
+  }
+
+  .formItemGroup {
+    display: flex;
+
+    .formItem {
+      margin-right: 12px;
+    }
+  }
+}
+
+
+.guideContainer {
+  .item {
+    background: #f9f9f9;
+    border-radius: 1px;
+    margin-top: 8px;
+    height: 44px;
+    padding: 0 14px 0 17px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+
+    :global {
+      .ant-btn-sm {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.quickLinkContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 368px;
+    cursor: pointer;
+    margin-right: 20px;
+    background: #f9f9f9;
+    border-radius: 1px;
+    margin-top: 8px;
+    padding: 20px 26px;
+    font-size: 14px;
+    color: #222;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: start;
+    -webkit-box-align: center;
+    align-items: center;
+
+    &:hover {
+      background-color: rgb(241, 244, 249);
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+
+      > span {
+        position: relative;
+        top: 2px;
+        left: 2px;
+
+        > svg {
+          width: 20px;
+          height: 20px
+        }
+      }
+
+      padding: 12px;
+      background: rgb(255, 255, 255);
+      border: 1px solid rgb(225, 226, 226);
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    > div {
+      > p {
+        margin-bottom: 0;
+      }
+
+      p.title {
+        font-weight: 500;
+      }
+
+      p.desc {
+        color: rgba(0, 0, 0, .45);
+        font-size: 12px;
+      }
+    }
+
+    > img {
+      width: 48px;
+      padding-right: 12px;
+    }
+
+
+    :global {
+      .ant-btn-sm {
+        font-size: 13px;
+      }
+    }
+  }
+}

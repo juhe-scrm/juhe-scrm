@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="group-chat-icon" transform="translate(1.5 1.5)">
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="Rectangle" fill="#FFFFFF" fill-opacity="0.011764706" fill-rule="evenodd" stroke="none" />
+    <path d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.134 0 0 3.13401 0 7C0 10.866 3.134 14 7 14L7 14Z" transform="translate(17 6)" id="Shape" fill="none" fill-rule="evenodd" stroke="#666666" stroke-width="3" stroke-linejoin="round" />
+    <path d="M3 0C1.1865 1.26495 0 3.36652 0 5.74532C0 8.29162 1.3596 10.5204 3.3924 11.7453" transform="translate(9 7.254669)" id="Shape" fill="none" fill-rule="evenodd" stroke="#666666" stroke-width="3" stroke-linejoin="round" />
+    <path d="M0 0C1.8135 1.26495 3 3.36652 3 5.74532C3 8.12402 1.8135 10.2257 0 11.4906" transform="translate(36 7.254669)" id="Shape" fill="none" fill-rule="evenodd" stroke="#666666" stroke-width="3" stroke-linejoin="round" />
+    <path d="M0 12L0 14L24 14L24 12C24 8.2725 24 6.4087 23.391 4.9385C22.5791 2.9783 21.0217 1.4209 19.0615 0.608999C17.5913 0 15.7275 0 12 0C8.2725 0 6.4087 0 4.9385 0.608999C2.9783 1.4209 1.4209 2.9783 0.609 4.9385C0 6.4087 0 8.2725 0 12L0 12Z" transform="translate(12 28)" id="Shape" fill="none" fill-rule="evenodd" stroke="#666666" stroke-width="3" stroke-linejoin="round" />
+    <path d="M4.3681 13.1281L4.3681 11.9281C4.3681 7.4477 4.3681 5.2075 3.4962 3.4962C2.7292 1.9909 1.5053 0.767 0 0" transform="translate(39.6318 28.871887)" id="Shape" fill="none" fill-rule="evenodd" stroke="#666666" stroke-width="3" stroke-linejoin="round" />
+    <path d="M0 13.1281L0 11.9281C0 7.4477 0 5.2075 0.87195 3.4962C1.63893 1.9909 2.86278 0.767 4.36807 0" transform="translate(4.0000916 28.871887)" id="Shape" fill="none" fill-rule="evenodd" stroke="#666666" stroke-width="3" stroke-linejoin="round" />
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+.add-customer-tutorial-page {
+  img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  ul {
+    margin-bottom: 32px;
+    padding-left: 0;
+
+    li {
+      display: -webkit-box;
+      display: flex;
+      margin: 16px 16px 16px -10px;
+      color: #cacaca;
+
+      &::before {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-top: 6px;
+        margin-right: 4px;
+        margin-left: 12px;
+        vertical-align: middle;
+        background: #cacaca;
+        border-radius: 6px;
+        content: '';
+      }
+    }
+  }
+
+  .line {
+    position: relative;
+    width: 740px;
+    height: 1px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    background-color: #eee;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 62px;
+      height: 3px;
+      background: #1890ff;
+      content: '';
+    }
+  }
+
+  .img-list {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    img {
+      width: 220px;
+      margin-right: 40px;
+    }
+  }
+
+  .content {
+    text-align: left;
+
+    .bold {
+      position: relative;
+      font-weight: 700;
+    }
+
+    .desc {
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 14px;
+
+      .line-2 {
+        display: block;
+        text-indent: 82px;
+      }
+    }
+
+    .highlight {
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+    .title {
+      display: -webkit-box;
+      display: flex;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 600;
+      -webkit-box-align: center;
+
+      img {
+        width: 20px;
+        margin-right: 4px;
+      }
+    }
+
+    .content-text {
+      .desc-wrap.top {
+        border-radius: 4px 4px 0 0;
+      }
+
+      .desc-wrap.bottom {
+        border-radius: 0 0 4px 4px;
+      }
+
+      .desc-wrap {
+        width: 740px;
+        height: 41px;
+        line-height: 41px;
+        background: #f0f8ff;
+        border-radius: 4px;
+
+        &::before {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          margin-right: 4px;
+          margin-left: 12px;
+          vertical-align: middle;
+          background-color: #1890ff;
+          border-radius: 6px;
+          content: '';
+        }
+      }
+    }
+
+    .hint {
+      width: 760px;
+      height: 38px;
+      margin-top: 14px;
+      margin-bottom: 32px;
+      padding-left: 18px;
+      line-height: 38px;
+      background: #f8f8f8;
+    }
+  }
+}

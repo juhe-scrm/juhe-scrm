@@ -1,0 +1,417 @@
+.messageViewOuter {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .timeNotion {
+    position: absolute;
+    width: 96%;
+    height: 30px;
+    overflow: hidden;
+    color: #1890ff;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 99;
+    margin-top: 10px;
+  }
+
+  .viewContainer {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    :global{
+      .ant-empty .ant-empty-normal{
+        margin: 100px 0;
+      }
+    }
+
+    .notification {
+      width: 100%;
+      padding: 6px 0;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 12px;
+      text-align: center;
+      background: rgba(242, 246, 250, 0.7);
+    }
+
+    .messageListBox {
+
+      .leftMsg {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .sendTime {
+          display: block;
+          width: 100%;
+          height: 25px;
+          margin: 20px 0;
+          color: #777;
+          font-size: 13px;
+          text-align: center;
+        }
+
+        .sendTimeEmpty {
+          display: block;
+          width: 100%;
+          height: 25px;
+          margin: 10px 0;
+          color: #777;
+          font-size: 13px;
+          text-align: center;
+        }
+
+        .leftMsgInfo {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 100%;
+
+          .leftAvatar {
+            width: 36px;
+            height: 36px;
+            margin: 0 10px;
+          }
+
+          .detailContainer {
+            display: -webkit-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-left: 12px;
+            padding: 0;
+            -webkit-box-align: start;
+            -webkit-box-pack: start;
+            -webkit-box-align: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            .textMsg {
+              max-width: 80%;
+              padding: 8px;
+              overflow: hidden;
+              color: #222;
+              white-space: pre-wrap;
+              word-break: break-word;
+              background: #f2f2f2;
+              border-radius: 0 4px 4px 8px;
+            }
+            .imageMsg {
+            }
+          }
+
+        }
+      }
+
+      .rightMsg {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .sendTime {
+          display: block;
+          width: 100%;
+          height: 20px;
+          margin: 10px 0;
+          color: #777;
+          font-size: 13px;
+          text-align: center;
+        }
+
+        .rightMsgInfo {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-end;
+          width: 100%;
+
+          .rightAvatar {
+            width: 36px;
+            height: 36px;
+            margin: 0 10px;
+          }
+
+          .detailContainer {
+            display: -webkit-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            margin-right: 12px;
+            padding: 0;
+            -webkit-box-align: start;
+            -webkit-box-pack: start;
+            -webkit-box-align: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+
+            .textMsg {
+              max-width: 80%;
+              padding: 8px;
+              overflow: hidden;
+              color: #fff;
+              white-space: pre-wrap;
+              word-break: break-word;
+              background: #1992f9;
+              border-radius: 4px 0 8px 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .loadMoreSpin {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+
+.contextViewContainer {
+  width: 100%;
+  // height: calc(100% - 10px);
+  // overflow: auto;
+  .notification {
+    width: 100%;
+    padding: 6px 0;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    text-align: center;
+    background: rgba(242, 246, 250, 0.7);
+  }
+
+  .messageListBox {
+    .leftMsg {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .sendTime {
+        display: block;
+        width: 100%;
+        height: 20px;
+        margin: 10px 0;
+        color: #777;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .leftMsgInfo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+
+        .leftAvatar {
+          width: 36px;
+          height: 36px;
+          margin: 0 10px;
+        }
+
+        .detailContainer {
+          display: -webkit-box;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          margin-left: 12px;
+          padding: 0;
+          -webkit-box-align: start;
+          -webkit-box-pack: start;
+          -webkit-box-align: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+
+          .textMsg {
+            max-width: 80%;
+            padding: 8px;
+            overflow: hidden;
+            color: #222;
+            white-space: pre-wrap;
+            word-break: break-word;
+            background: #f2f2f2;
+            border-radius: 0 4px 4px 8px;
+          }
+        }
+      }
+    }
+
+    .rightMsg {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .sendTime {
+        display: block;
+        width: 100%;
+        height: 20px;
+        margin: 10px 0;
+        color: #777;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .rightMsgInfo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 100%;
+
+        .rightAvatar {
+          width: 36px;
+          height: 36px;
+          margin: 0 10px;
+        }
+
+        .detailContainer {
+          display: -webkit-box;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          align-items: center;
+          justify-content: flex-end;
+          width: 100%;
+          margin-right: 12px;
+          padding: 0;
+          -webkit-box-align: start;
+          -webkit-box-pack: start;
+          -webkit-box-align: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+
+          .textMsg {
+            max-width: 80%;
+            padding: 8px;
+            overflow: hidden;
+            color: #fff;
+            white-space: pre-wrap;
+            word-break: break-word;
+            background: #1992f9;
+            border-radius: 4px 0 8px 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .loadMoreSpin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .loadMoreBottomSpin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.searchViewContainerOuter {
+  height: calc(100% - 10px);
+  position: relative;
+
+  .back {
+    position: absolute;
+    width: 96%;
+    height: 50px;
+    padding-left: 24px;
+    overflow: hidden;
+    color: #1890ff;
+    font-size: 16px;
+    line-height: 50px;
+    background-color: #fff;
+    z-index: 99;
+  }
+
+  .searchViewContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    .searchMessageView {
+      margin-top: 35px;
+    }
+
+    .noMore {
+      width: 100%;
+      margin-top: 15px;
+      padding-top: 16px;
+      padding-bottom: 12px;
+      color: #12141a;
+      text-align: center;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .msgItem {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      padding: 10px 24px 10px 10px;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+
+      img {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        border-style: none;
+        border-radius: 2px;
+      }
+
+      .textBox {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: auto;
+        margin-left: 10px;
+
+        .nameAndTime {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          height: 28px;
+          color: #12141a;
+          font-size: 13px;
+          line-height: 36px;
+        }
+
+        .textContent {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          height: auto;
+          //color: #1890ff;
+          font-size: 13px;
+          line-height: 20px;
+          margin-top: 5px;
+
+          div {
+            padding-right: 60px;
+          }
+        }
+      }
+    }
+  }
+}

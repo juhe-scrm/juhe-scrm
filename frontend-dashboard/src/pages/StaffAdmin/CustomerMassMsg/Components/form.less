@@ -1,0 +1,52 @@
+@import '../../../../theme.less';
+
+.content {
+  max-width: 800px;
+
+  .formItem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin: 32px 0;
+
+    .label {
+      position: relative;
+      //width: 130px;
+      height: 32px;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 14px;
+      line-height: 30px;
+      text-align: right;
+      vertical-align: middle;
+
+      .required {
+        &::before {
+          display: inline-block;
+          margin-right: 4px;
+          color: #ff4d4f;
+          font-size: 14px;
+          font-family: SimSun, sans-serif;
+          line-height: 1;
+          content: '*';
+        }
+      }
+    }
+
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.multiFormItemSection {
+  background: #fbfbfb;
+  border-radius: 2px;
+  border: 1px solid #ebebeb;
+  padding: 13px 20px;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}

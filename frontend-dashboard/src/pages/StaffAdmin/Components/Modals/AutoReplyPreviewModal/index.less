@@ -1,0 +1,36 @@
+.maskContainer {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, .7);
+}
+
+.closeContainer {
+  position: absolute;
+  top: -3%;
+  cursor: pointer;
+  right: -31px;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 34px;
+  height: 34px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.previewContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

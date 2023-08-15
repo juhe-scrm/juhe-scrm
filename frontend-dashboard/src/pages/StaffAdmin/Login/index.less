@@ -1,0 +1,42 @@
+@import '../../../theme.less';
+
+.main {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px 36px 0;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 1px 1px 12px 1px rgba(33, 33, 33, 0.025);
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+    max-width: 328px;
+  }
+
+  .header {
+    margin: 24px 0 0 0;
+    text-align: center;
+
+    .title {
+      color: #32507c;
+    }
+
+    .desc {
+      margin-top: 0;
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+    }
+  }
+
+  .placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 328px;
+    height: 400px;
+  }
+
+  .qrcodeContainer {
+    display: flex;
+    justify-content: center;
+  }
+}

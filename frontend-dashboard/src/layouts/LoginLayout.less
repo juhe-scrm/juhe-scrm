@@ -1,0 +1,42 @@
+@import '../theme.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+}
+
+.content {
+  flex: 1;
+  padding: 160px 0 36px 0;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-color: #f2f6ff;
+  }
+
+  .content {
+    padding: 160px 0 36px 0;
+  }
+}
+
+.top {
+  text-align: center;
+}
+
+.header {
+  height: 48px;
+  margin-bottom: 16px;
+  line-height: 48px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 40px;
+  vertical-align: center;
+}

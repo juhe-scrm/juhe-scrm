@@ -1,0 +1,16 @@
+@import '../../theme.less';
+
+.dropdownContainer > * {
+  background-color: @popover-bg;
+  border-radius: 4px;
+  box-shadow: @shadow-1-down;
+}
+
+@media screen and (max-width: @screen-xs) {
+  .dropdownContainer {
+    width: 100% !important;
+  }
+  .dropdownContainer > * {
+    border-radius: 0 !important;
+  }
+}
