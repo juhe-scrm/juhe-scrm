@@ -45,9 +45,9 @@ const QrcodeLogin: React.FC = () => {
         console.log(err);
       });
 
-
+    // TODO: 要修改为线上禁用调试登录
     // 演示环境使用调试登录，不用扫码登录
-    if (window.location.href.includes("dashboard.demo.openscrm.cn")) {
+    if (window.location.href.includes("skip_auth")) {
       message.info("演示环境无需扫码登录，3秒后自动登录", 3000);
       setTimeout(() => {
         StaffAdminForceLogin().then((res: CommonResp) => {
@@ -55,8 +55,7 @@ const QrcodeLogin: React.FC = () => {
             message.error(res.message)
             return;
           }
-
-          window.location.href = "http://dashboard.demo.openscrm.cn:8000/staff-admin/welcome";
+          window.location.href = "/staff-admin/welcome";
         }).catch((err) => {
           message.error("自动登录失败")
           console.log("err", err)
