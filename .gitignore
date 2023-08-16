@@ -1,4 +1,5 @@
-# 后端
+### 后端
+
 *.exe
 
 .idea
@@ -17,44 +18,24 @@ backend-api/scripts/deploy-*.bat
 backend-api/go.sum
 backend-api/main
 
-# 前端
+### 前端
+
 # dependencies
-frontend-*/**/node_modules
-# roadhog-api-doc ignore
-frontend-*//src/utils/request-temp.js
+node_modules/
+
+# roadhog-api-doc
+frontend-*/src/utils/request-temp.js
 frontend-*/_roadhog-api-doc
-
-# production
-frontend-*//dist
-frontend-*//.vscode
-
-# misc
-frontend-*/.DS_Store
-frontend-*/npm-debug.log*
-frontend-*/yarn-error.log
-
-frontend-*//coverage
-frontend-*/.idea
-frontend-*/yarn.lock
-frontend-*/package-lock.json
-frontend-*/*bak
-frontend-*/.vscode
-
-# visual studio code
-frontend-*/.history
-*.log
-frontend-*/functions/*
-frontend-*/.temp/**
 
 # umi
 frontend-*/.umi
 frontend-*/.umi-production
 
-# screenshot
-frontend-*/screenshot
-frontend-*/.firebase
-frontend-*/.eslintcache
-
-frontend-*/build
-
-frontend-*/scripts/deploy*
+# misc
+frontend-*/.idea
+frontend-*/.vscode
+frontend-*/.DS_Store
+frontend-*/.temp
+frontend-*/.history
+frontend-*/dist
+frontend-*/*.log*
