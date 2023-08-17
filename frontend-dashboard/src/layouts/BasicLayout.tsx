@@ -36,13 +36,17 @@ export type BasicLayoutContext = { [K in 'location']: BasicLayoutProps[K] } & {
 /** Use Authorized check all menu item */
 
 const menuDataRender = (menuList: MenuDataItem[]): MenuDataItem[] =>
-  menuList.map((item) => {
-    const localItem = {
-      ...item,
-      children: item.children ? menuDataRender(item.children) : undefined,
-    };
-    return Authorized.check(item.authority, localItem, null) as MenuDataItem;
-  });
+    menuList.reduce((last, item) => {
+        const localItem = {
+            ...item,
+            children: item.children ? menuDataRender(item.children) : undefined,
+        };
+        const menuItem = Authorized.check(item.authority, localItem, null) as MenuDataItem;
+        if (menuItem) {
+            last.push(menuItem);
+        }
+        return last;
+    }, [] as MenuDataItem[]);
 
 const IconFont = createFromIconfontCN({
   scriptUrl: defaultSettings.iconfontUrl,
