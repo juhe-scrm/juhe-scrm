@@ -39,9 +39,9 @@ export default defineConfig({
     dataField: 'data',
   },
   scripts: [
-    'https://unpkg.com/react@17/umd/react.production.min.js',
-    'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js',
-    'https://unpkg.com/@ant-design/charts@1.0.5/dist/charts.min.js',
+    'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/react/17.0.0/umd/react.production.min.js',
+    'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/react-dom/17.0.0/umd/react-dom.production.min.js',
+    'https://cdn.jsdelivr.net/npm/@ant-design/charts@1.0.5/dist/charts.min.js',
     //使用 组织架构图、流程图、资金流向图、缩进树图 才需要使用
     //'https://unpkg.com/@ant-design/charts@1.0.5/dist/charts_g6.min.js',
   ],
