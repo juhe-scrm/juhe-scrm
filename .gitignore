@@ -39,3 +39,6 @@ frontend-*/.temp
 frontend-*/.history
 frontend-*/dist
 frontend-*/*.log*
+
+### 其他
+.DS_Store

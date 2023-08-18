@@ -7,7 +7,7 @@ App:
   Key: todo
   # 超级管理员userID
   SuperAdmin:
-    - admin
+    - hanson
   # 是否开启Models自动迁移，修改Model定义自动同步Mysql表结构
   AutoMigration: true
 
