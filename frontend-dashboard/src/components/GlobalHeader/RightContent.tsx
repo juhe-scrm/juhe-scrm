@@ -1,6 +1,6 @@
 import { Tag, Tooltip } from 'antd';
 import type { Settings as ProSettings } from '@ant-design/pro-layout';
-import { QuestionCircleOutlined } from '@ant-design/icons';
+import { GithubOutlined } from '@ant-design/icons';
 import React from 'react';
 import type { ConnectProps } from 'umi';
 import { connect } from 'umi';
@@ -29,16 +29,17 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
 
   return (
     <div className={className}>
-      <Tooltip title="使用帮助">
+      <Tooltip title="Juhe SCRM 官方仓库">
         <a
           style={{
             color: 'inherit',
           }}
+          rel="noreferrer"
           target="_blank"
-          href="https://www.openscrm.cn"
+          href="https://github.com/juhe-scrm/juhe-scrm"
           className={styles.action}
         >
-          <QuestionCircleOutlined />
+          <GithubOutlined style={{ fontSize: '24px' }} />
         </a>
       </Tooltip>
       <StaffAdminAvatarDropdown menu={true} />
