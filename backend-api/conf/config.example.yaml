@@ -1,6 +1,6 @@
 # 应用基本配置
 App:
-  Name: juhe-scrm
+  Name: openscrm
   # * 运行环境 DEV,TEST,PROD；开发和测试环境会开放调试API，生产环境请使用PROD；
   Env: DEV
   # * 应用秘钥 64位，生成命令：openssl rand -base64 64
