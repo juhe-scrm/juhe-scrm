@@ -1,4 +1,4 @@
-import {Alert, message, Result, Spin} from 'antd';
+import {Alert, Button, message, Result, Spin} from 'antd';
 import React, {useState} from 'react';
 
 import styles from './index.less';
@@ -44,26 +44,19 @@ const QrcodeLogin: React.FC = () => {
       .catch((err) => {
         console.log(err);
       });
+  };
 
-    // TODO: 要修改为线上禁用调试登录
-    // 演示环境使用调试登录，不用扫码登录
-    if (window.location.href.includes("skip_auth")) {
-      message.info("演示环境无需扫码登录，3秒后自动登录", 3000);
-      setTimeout(() => {
-        StaffAdminForceLogin().then((res: CommonResp) => {
-          if (res.code !== 0) {
-            message.error(res.message)
-            return;
-          }
-          window.location.href = "/staff-admin/welcome";
-        }).catch((err) => {
-          message.error("自动登录失败")
-          console.log("err", err)
-        })
-      }, 3000);
-    }
-
-
+  const handleDemoLogin = () => {
+    StaffAdminForceLogin().then((res: CommonResp) => {
+      if (res.code !== 0) {
+        message.error(res.message);
+        return;
+      }
+      window.location.href = "/staff-admin/welcome";
+    }).catch((err) => {
+      message.error("自动登录失败")
+      console.log("err", err)
+    })
   };
 
   return (
@@ -106,6 +99,16 @@ const QrcodeLogin: React.FC = () => {
           onLoad={handleScriptLoad}
         />
       </div>
+
+      <Button
+        className={styles.demoEntry}
+        size="large"
+        onClick={() => {
+          handleDemoLogin();
+        }}
+      >
+        演示入口
+      </Button>
     </div>
   );
 };
