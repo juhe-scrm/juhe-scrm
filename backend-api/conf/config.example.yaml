@@ -7,7 +7,7 @@ App:
   Key: todo
   # 超级管理员userID
   SuperAdmin:
-    - WangQiang
+    - admin
   # 是否开启Models自动迁移，修改Model定义自动同步Mysql表结构
   AutoMigration: true
 
@@ -60,13 +60,13 @@ Storage:
 # 企业微信配置
 WeWork:
   # * 企业ID，https://work.weixin.qq.com/wework_admin/frame#profile
-  ExtCorpID: ww2d3e2957190c6e4c
+  ExtCorpID: ww108d9633e9097f25
   # * 企业微信通讯录API Secret https://work.weixin.qq.com/wework_admin/frame#apps/contactsApi
   ContactSecret: todo
   # * 企业微信客户联系API Secret https://work.weixin.qq.com/wework_admin/frame#customer/analysis
   CustomerSecret: todo
   # * 企业自建主应用ID https://work.weixin.qq.com/wework_admin/frame#apps
-  MainAgentID: 10004
+  MainAgentID: 1000002
   # * 企业自建主应用Secret
   MainAgentSecret: todo
   # * 同步通讯录回调地址的token，客户联系共用此配置，https://work.weixin.qq.com/wework_admin/frame#apps/contactsApi，https://work.weixin.qq.com/wework_admin/frame#customer/analysis
