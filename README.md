@@ -7,20 +7,25 @@
 ## 截图
 
 ![v36g39.png](https://files.catbox.moe/v36g39.png)
-![](https://openscrm.oss-cn-hangzhou.aliyuncs.com/public/screenshots/%E5%90%8E%E5%8F%B0%E9%A6%96%E9%A1%B5.png)
+![cd788338d401375c814f0fd66f4fbb81](https://github.com/Hanson/vbot/assets/10583423/034ce0fb-12c2-4ce0-8335-cf5132b17bca)
 
 ## 安装
 
 ### 后端
 
 1、cd backend-api
+
 1、复制配置文件并修改 /conf/config.example.yaml -> /conf/config.yaml
+
 2、go run .
 
 ### 前端
 
 1、cd frontend-dashboard
+
 2、npm -g install tyarn
+
 3、tyarn install
+
 4、tyarn start
 
