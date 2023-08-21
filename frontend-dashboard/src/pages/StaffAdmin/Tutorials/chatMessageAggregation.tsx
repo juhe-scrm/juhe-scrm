@@ -19,7 +19,7 @@ const AddCustomerTutorial: React.FC = () => {
             </div>
             <div className="hint">
               <span className="desc">
-                聚合聊天，高效管理客户咨询。详情请添加微信号 <span className="bold">【hansonskr】</span>垂询。
+                聚合聊天，高效管理客户咨询。体验请添加微信号 <span className="bold">【hansonskr】</span>，并备注【聚合聊天】。
               </span>
             </div>
             <img width={1200} src="/images/chatMsgAggreDemo.png" />
