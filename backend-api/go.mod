@@ -21,6 +21,7 @@ require (
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/gogf/gf v1.16.2
 	github.com/google/uuid v1.1.2
+	github.com/hanson/go-toolbox v0.0.0-20230426055209-0ff8bbe00468 // indirect
 	github.com/iancoleman/strcase v0.1.3
 	github.com/jinzhu/copier v0.3.2
 	github.com/json-iterator/go v1.1.12

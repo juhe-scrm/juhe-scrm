@@ -18,13 +18,14 @@ import (
 func NewRouter() *gin.Engine {
 	r := gin.New()
 	if conf.Settings.App.Env == c.DEV {
-		r.Use(gin.Logger())
+		//r.Use(gin.Logger())
 		r.Use(gin.Recovery())
 	} else {
 		r.Use(m.AccessLog())
 		r.Use(m.Recovery())
 	}
 
+	r.Use(m.Cors())
 	r.Use(m.Tracing())
 	//r.Use(m.Translations())
 	r.Use(sessions.SessionsMany([]string{
