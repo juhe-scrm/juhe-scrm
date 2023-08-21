@@ -66,7 +66,7 @@ export async function GetStaffAdminLoginQrcode(extCorpID: string, sourceURL: str
   });
 }
 
-export async function StaffAdminForceLogin(extCorpID: string = "ww2d3e2957190c6e4c", extStaffID: string = "WangQiang") {
+export async function StaffAdminForceLogin(extCorpID: string = "ww108d9633e9097f25", extStaffID: string = "hanson") {
   return request(`${StaffAdminApiPrefix}/action/force-login`, {
     method: 'POST',
     data: {ext_corp_id: extCorpID, ext_staff_id: extStaffID},
