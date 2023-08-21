@@ -59,11 +59,12 @@ func init() {
 	services.Syncs()
 }
 
-//go:generate swag init
 // @title OpenSCRM
 // @version 1.0
 // @description  企微私域流量管理
 // @termsOfService https://ixj.cn
+//
+//go:generate swag init
 func main() {
 	gin.SetMode(conf.Settings.Server.RunMode)
 	router := routers.NewRouter()

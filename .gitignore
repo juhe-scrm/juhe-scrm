@@ -1,5 +1,7 @@
 ### 后端
 
+Makefile
+
 *.exe
 
 .idea
@@ -16,6 +18,7 @@ backend-api/docs/swagger.yaml
 backend-api/scripts/deploy-test.bat
 backend-api/scripts/deploy-*.bat
 backend-api/go.sum
+backend-api/bin/
 backend-api/main
 
 ### 前端

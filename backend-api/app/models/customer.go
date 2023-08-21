@@ -267,7 +267,7 @@ func (o Customer) Query(
 	err := db.Preload("Staffs").
 		Preload("Staffs.CustomerStaffTags").
 		Select("customer.*").
-		Group("customer.ext_id").
+		//Group("customer.ext_id").
 		Find(&customers).Error
 	if err != nil {
 		err = errors.WithStack(err)

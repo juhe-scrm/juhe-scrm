@@ -125,6 +125,7 @@ func SetupSetting() error {
 	var err error
 	viper.SetConfigName("config")     // name of config file (without extension)
 	viper.AddConfigPath("conf")       // optionally look for config in the working directory
+	viper.AddConfigPath("./")         // optionally look for config in the working directory
 	viper.AddConfigPath("../conf")    // optionally look for config in the working directory
 	viper.AddConfigPath("../../conf") // optionally look for config in the working directory
 	viper.AddConfigPath("/srv")       // optionally look for config in the working directory
