@@ -142,6 +142,12 @@ export default [
                     component: './StaffAdmin/CustomerTag/index',
                     authority: [BizCustomerTag_Full, BizCustomerTag_Read],
                   },
+                  {
+                    path: '/staff-admin/customer-management/chat-messages-aggregation',
+                    name: '聚合聊天',
+                    icon: 'CommentOutlined',
+                    component: './StaffAdmin/Tutorials/chatMessageAggregation',
+                  },
                 ],
               },
               {
