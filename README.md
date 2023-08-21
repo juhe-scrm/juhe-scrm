@@ -4,6 +4,10 @@
 
 本仓库源码出自 [openscrm](https://github.com/openscrm),由于企微接口更新频率高，我们团队会基于 openscrm 自己维护这套 SCRM 源码，欢迎大家一起维护，有问题可以提 issue，我们会尽快解决。
 
+## 体验
+
+体验链接 https://demo-scrm.juhebot.com/
+
 ## 截图
 
 ![v36g39.png](https://files.catbox.moe/v36g39.png)
