@@ -416,7 +416,8 @@ const Welcome: React.FC<WelcomeProps> = (props) => {
                        bodyStyle={{paddingTop: 10}}>
                 <Row gutter={2}>
                   <Col span={12}>
-                    <img src={QrcodeImage} width={100} style={{marginBottom: 12}}/>
+                    <div style={{marginBottom: 12}}/>
+                    {/*<img src={QrcodeImage} width={100} style={{marginBottom: 12}}/>*/}
                   </Col>
                   <Col span={12}>
                     <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
