@@ -36,6 +36,10 @@
 
 4、tyarn start
 
+## 企微更多权限接口
+
+https://apifox.com/apidoc/shared-d478def0-67c1-4161-b385-eef8a94e9d17
+
 ## 联系我
 请备注 scrm
 ![c1dd0c62c37d4a9ab8c6aa7a4e51573](https://user-images.githubusercontent.com/10583423/220509100-a4ecf72e-5d98-41bb-bcbf-41f955c99ba4.jpg)
