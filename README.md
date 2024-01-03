@@ -17,8 +17,10 @@
 ![cd788338d401375c814f0fd66f4fbb81](https://github.com/Hanson/vbot/assets/10583423/034ce0fb-12c2-4ce0-8335-cf5132b17bca)
 
 ## 聚合聊天
+
 https://juhebot.com
-![cd788338d401375c814f0fd66f4fbb81](https://github.com/Hanson/vbot/assets/10583423/034ce0fb-12c2-4ce0-8335-cf5132b17bca)
+
+![image](https://github.com/juhe-scrm/juhe-scrm/assets/10583423/373f68ea-f8f7-4893-99ab-44fab574f4c1)
 
 ## 安装
 
