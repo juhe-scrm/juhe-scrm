@@ -14,7 +14,6 @@
 ## 截图
 
 ![v36g39.png](https://files.catbox.moe/v36g39.png)
-![cd788338d401375c814f0fd66f4fbb81](https://github.com/Hanson/vbot/assets/10583423/034ce0fb-12c2-4ce0-8335-cf5132b17bca)
 
 ## 聚合聊天
 
